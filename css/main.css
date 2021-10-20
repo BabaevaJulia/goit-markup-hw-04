@@ -85,7 +85,6 @@ body {
   line-height: 1.19;
   text-decoration: none;
   letter-spacing: 0.03em;
-  /* margin-right: 93px; */
 }
 
 .web {
@@ -101,8 +100,6 @@ body {
 }
 
 .header {
-  /* margin-top: 25px;
-  margin-bottom: 25px; */
   border-bottom: 1px solid #ececec;
 }
 
@@ -181,6 +178,7 @@ body {
 
 .section-hero {
   background-color: var(--secondary-bg-color);
+
   text-align: center;
 }
 
@@ -192,13 +190,27 @@ body {
   line-height: 1.37;
   letter-spacing: 0.06em;
 
-  /* margin-top: 200px; */
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 
   width: 696px;
   height: 120px;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Button */
@@ -225,7 +237,7 @@ body {
 /* Приоритеты */
 
 .section {
-  background-color: var(--primery-bg-color);
+  background-color: var(--primary-white-color);
   padding-top: 94px;
 }
 
@@ -242,6 +254,18 @@ body {
 .item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
+}
+.icon::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  background-image: url(../images/детали\ .svg);
+  margin-bottom: 30px;
 }
 
 .section-title {
@@ -266,13 +290,13 @@ body {
 /*-----Чем мы занимаемся------*/
 
 .section-box {
-  background-color: var(--primery-bg-color);
+  background-color: var(--primary-white-color);
   padding-top: 92px;
   padding-bottom: 92px;
 }
 
 .section-work {
-  background-color: var(--primery-bg-color);
+  background-color: var(--primary-white-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
