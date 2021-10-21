@@ -334,6 +334,7 @@ body {
 }
 
 /*-----Наша команда-----*/
+
 .command {
   background-color: var(--fourth-bg-color);
   padding-top: 94px;
@@ -375,6 +376,7 @@ body {
 }
 
 .command-item-description {
+  background-color: var(--primary-white-color);
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -385,6 +387,46 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  padding-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-item:not(last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--primary-white-color);
 }
 
 /* ------Футер----- */
