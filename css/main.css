@@ -118,6 +118,24 @@ body {
   display: flex;
 }
 
+.header-icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+.link-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--title-text-color);
+}
+
+.link-icon:hover,
+.link-icon:focus {
+  fill: var(--accent-color);
+}
+
 /* --------site nav------- */
 
 .menu-list {
@@ -424,9 +442,52 @@ body {
   fill: var(--primary-white-color);
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social-link:hover .social-icon,
+.ssocial-link:focus .social-icon {
   fill: var(--primary-white-color);
+}
+/* --------Постоянные клиенты */
+.clients {
+  background-color: var(--primary-white-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.title-clients {
+  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.logo-clients {
+  display: flex;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  list-style: none;
+}
+
+.clients-item {
+  display: block;
+  height: 92px;
+  margin-bottom: 30px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-item {
+  flex-basis: calc((100% - 6 * 30px) / 6);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.logo-company {
+  fill: #afb1b8;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ------Футер----- */
