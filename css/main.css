@@ -382,6 +382,8 @@ body {
   flex-basis: calc((100% - 4 * 30px) / 4);
   margin-left: 30px;
   margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .command-subject {
   color: var(--primary-text-color);
@@ -463,25 +465,45 @@ body {
 }
 
 .logo-clients {
+  padding: 0;
+  margin: 0;
   display: flex;
-  margin-left: -30px;
-  margin-bottom: -30px;
   list-style: none;
+  justify-content: center;
 }
 
 .clients-item {
   display: block;
   height: 92px;
+  margin-left: 30px;
   margin-bottom: 30px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
 }
 
-.clients-item {
-  flex-basis: calc((100% - 6 * 30px) / 6);
-  margin-left: 30px;
-  margin-bottom: 30px;
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid var(--icons-idle-color);
+  fill: var(--icons-idle-color); */
+  /* border-radius: 4px; */
+  width: 170px;
+  height: 92px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-link:hover .logo-company,
+.clients-link:focus .logo-company {
+  fill: var(--accent-color);
 }
 
 .logo-company {
@@ -492,6 +514,9 @@ body {
 
 /* ------Футер----- */
 
+.footer-container {
+  display: flex;
+}
 .page-footer {
   color: var(--primary-white-color);
   background-color: var(--secondary-bg-color);
@@ -552,6 +577,58 @@ body {
 }
 .about-tel {
   display: block;
+}
+
+/* --------Footer right------- */
+
+.footer-right {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+.footer-right-list {
+  list-style: none;
+  display: flex;
+}
+.footer-right-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.footer-right-item {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white-color);
+}
+
+.footer-right-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-right-link {
+  fill: var(--primary-white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.footer-right-link:hover,
+.footer-right-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* ------Страница портфолио------- */
