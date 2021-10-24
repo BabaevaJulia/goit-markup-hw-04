@@ -17,9 +17,11 @@
 
 
     <!--Header-->
+
+
     <header class="header">
         <div class="container header-container">
-            <nav class="header-container">
+            <nav class="header-nav">
 
                 <a href="index.html" class="logo nav-link"><span lang="en" class="web">Web</span><span class="studio">Studio</span></a>
                 </a>
@@ -39,13 +41,25 @@
             </nav>
 
             <ul class="info-nav list header-connect">
-                <li class="menu-info">
-                    <a href="mailto:info@devstudio.com" class="link nav-link">info@devstudio.com</a> </li>
-                <li class="menu-info">
-                    <a href="tel:+380961111111" class="link nav-link">+38 096 111 11 11</a> </li>
-            </ul>  
-        </div>
-    </header> 
+            <a href="" class="header-icon">
+                <svg class="link-icon">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+            </a>
+            <li class="menu-info">
+                <a href="mailto:info@devstudio.com" class="link nav-link">info@devstudio.com</a>
+            </li>
+            <a href="" class="header-icon">
+                <svg class="link-icon">
+                    <use href="./images/sprite.svg#icon-tel"></use>
+                </svg>
+            </a>
+            <li class="menu-info">
+                <a href="tel:+380961111111" class="link nav-link">+38 096 111 11 11</a>
+            </li>
+            </ul>
+            </div>
+            </header>
  
 
     <main>
@@ -80,7 +94,7 @@
             
                 <ul class="projects list">
                     <li class="projects-item">
-                        <a>
+                        <a href="" class="projects-link">
                             <img src="images/технокряк.jpg" alt="технокряк" width="370" />
                             <div class="projects-description">
                                 <h2 class="projects-title">Технокряк</h2>
@@ -90,7 +104,7 @@
                         </a>
                     </li>
                     <li class="projects-item">
-                        <a>
+                        <a fref="" class="projects-link">
                             <img src="images/постер.jpg" alt="постер" width="370" />
                             <div class="projects-description">
                                 <h2 class="projects-title">Постер <span lang="en"> New Orlean vs Golden Star</span> </h2>
@@ -100,7 +114,7 @@
                         </a>
                     </li>
                     <li class="projects-item">
-                        <a>
+                        <a fref="" class="projects-link">
                             <img src="images/ресторан.jpg" alt="ресторан" width="370" />
                             <div class="projects-description">
                                 <h2 class="projects-title">Ресторан <span lang="en">Seafood</span></h2>
@@ -110,7 +124,7 @@
                         </a>
                     </li> 
                     <li class="projects-item">
-                        <a>
+                        <a fref="" class="projects-link">
                             <img src="images/prime.jpg" alt="prime" width="370" /> 
                             <div class="projects-description">
                                 <h2 class="projects-title">Проект <span lang="en">Prime</span></h2>
@@ -119,8 +133,8 @@
                             </div>
                         </a>
         
-                    <li class="projects-item">
-                        <a>
+                    <li class="projects-item"  class="projects-link">
+                        <a fref="" class="projects-link">
                             <img src="images/boxes.jpg" alt="boxes" width="370" />
                             <div class="projects-description">
                                 <h2 class="projects-title">Проект <span lang="en">Boxes</span></h2>
@@ -130,7 +144,7 @@
                         </a>
                     </li>
                     <li class="projects-item">
-                        <a>
+                        <a fref="" class="projects-link">
                             <img src="images/inspiration.jpg" alt="inspiration" width="370"/> 
                             <div class="projects-description">
                                 <h2 class="projects-title">Inspiration has no Borders</h2>
@@ -140,7 +154,7 @@
                         </a>
                     </li>
                     <li class="projects-item">
-                        <a>
+                        <a fref="" class="projects-link">
                             <img src="images/издание.jpg" alt="издание" width="370" />
                             <div class="projects-description">
                                 <h2 class="projects-title">Издание <span lang="en">Limited Edition</span></h2>
@@ -150,7 +164,7 @@
                         </a>
                     </li>
                     <li class="projects-item">
-                        <a>
+                        <a fref="" class="projects-link">
                             <img src="images/lab.jpg" alt="lab" width="370" />
                             <div class="projects-description">
                                 <h2 class="projects-title">Проект <span lang="en">LAB</span></h2>
@@ -160,7 +174,7 @@
                         </a>
                     </li>
                     <li class="projects-item">
-                        <a>
+                        <a fref="" class="projects-link">
                             <img src="images/business.jpg" alt="business" width="370" />
                             <div class="projects-description">
                                 <h2 class="projects-title" lang="en">Growing Business</h2>
@@ -180,30 +194,72 @@
     
     <!--Футер-->    
     <footer class="page-footer">
-        <div class="container">
-        <a href="index.html" class="logo-footer"><span lang="en" class="web">Web</span><span class="studio-footer">Studio</span></a>
-        </a>
-        <address>
-            <ul class="nav-footer list">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="index.html" class="logo-footer"><span lang="en" class="web">Web</span><span
+                        class="studio-footer">Studio</span></a>
+                </a>
     
-                <li>
-                    <a href="г.Киев,пр-тЛесиУкраинки,26"class=" address link about-address">г. Киев, пр-т Леси Украинки, 26</a>
-                </li>
+                <address>
+                    <ul class="nav-footer list">
     
-                <li>
-                    <a href="mailto:info@devstudio.com"class="link about-mail">info@devstudio.com</a>
-                </li>
+                        <li>
+                            <a href="г.Киев,пр-тЛесиУкраинки,26" class="address link about-address">г. Киев, пр-т Леси
+                                Украинки, 26</a>
+                        </li>
     
-                <li>
-                    <a href="tel:+380961111111"class="link about-tel">+38 096 111 11 11</a>
-                </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="link about-mail">info@devstudio.com</a>
+                        </li>
     
-            </ul>
-        </address>
+                        <li>
+                            <a href="tel:+380961111111" class="link about-tel">+38 096 111 11 11</a>
+                        </li>
+    
+                    </ul>
+                </address>
+            </div>
+    
+    
+            <div class="footer-right">
+                <h2 class="footer-right-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+                <ul class="footer-right-list">
+                    <li class="footer-right-item" aria-label="Instagram">
+                        <a href="" class="footer-right-link">
+                            <svg width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-right-item" aria-label="Twitter">
+                        <a href="" class="footer-right-link">
+                            <svg width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-right-item" aria-label="Facebook">
+                        <a href="" class="footer-right-link">
+                            <svg width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-right-item" aria-label="Linked-In">
+                        <a href="" class="footer-right-link">
+                            <svg width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    
     </footer>
-</html>
-
+    
+    
+    </body>
+    
+    </html>
 
     
