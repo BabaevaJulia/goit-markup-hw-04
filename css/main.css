@@ -272,13 +272,7 @@ body {
 
 .section-container {
   display: flex;
-
-  width: 1170px;
-
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: -30px;
 }
 .item {
   flex-basis: calc(100% / 4 - 30px);
@@ -442,7 +436,6 @@ body {
 .social-link {
   width: 100%;
   height: 100%;
-  background-color: var(--primary-white-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -452,14 +445,16 @@ body {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  fill: var(--primary-white-color);
+  /* fill: var(--primary-white-color); */
 }
 
 .social-link:hover .social-icon,
 .ssocial-link:focus .social-icon {
   fill: var(--primary-white-color);
 }
+
 /* --------Постоянные клиенты */
+
 .clients {
   background-color: var(--primary-white-color);
   padding-top: 94px;
@@ -481,6 +476,7 @@ body {
   display: flex;
   list-style: none;
   justify-content: center;
+  margin-left: -30px;
 }
 
 .clients-item {
@@ -488,25 +484,21 @@ body {
   height: 92px;
   margin-left: 30px;
   margin-bottom: 30px;
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
-}
 .clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   width: 170px;
   height: 92px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
 
@@ -604,7 +596,7 @@ body {
   margin-top: 0;
   margin-bottom: 20px;
   font-family: "Roboto";
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -693,6 +685,10 @@ body {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.projects-link {
+  text-decoration: none;
 }
 
 .projects-item:nth-child(3n) {
