@@ -453,7 +453,7 @@ body {
 }
 
 .social-link:hover .social-icon,
-.ssocial-link:focus .social-icon {
+.social-link:focus .social-icon {
   fill: var(--primary-white-color);
 }
 
