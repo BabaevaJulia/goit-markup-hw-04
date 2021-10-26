@@ -430,7 +430,7 @@ body {
   border-radius: 50%;
 }
 
-.social-item:not(last-child) {
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
 
